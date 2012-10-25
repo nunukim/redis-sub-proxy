@@ -1,6 +1,6 @@
 {
   "name": "redis-sub-proxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gather Redis's sub connections to one connection",
   "main": "lib/main.js",
   "scripts": {
