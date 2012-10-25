@@ -9,11 +9,11 @@
   },
   "dependencies": {
     "redis": "~> 0.8",
-    "coffee-script": "*",
     "underscore": "*"
   },
   "devDependencies": {
-    "vows": "*"
+    "vows": "*",
+    "coffee-script": "*"
   },
   "repository": "",
   "author": "Ryota SUZUKI",
