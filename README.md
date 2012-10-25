@@ -1,5 +1,3 @@
-# Redis subscribe proxy
-
 This is a proxy of Redis for SUBSCRIBE.
 
 In typical situation of using Pub/Sub of Redis, you want to subscribe many channels on a single process.
@@ -8,7 +6,8 @@ But that makes you to create many clients resulting EMFILE error.
 
 This module proxies many SUBSCRIBE clients to a single Redis connection.
 
-# usage
+## usage
+```js
     var proxy = require("redis-sub-proxy"),
         connection, sub1, sub2;
 
@@ -21,3 +20,4 @@ This module proxies many SUBSCRIBE clients to a single Redis connection.
     sub2 = connection.createClient();
     sub2.subscribe('chat:room2')
     sub2.on("message", function(ch, msg){ console.log("sub2: ", ch, msg) })
+```
