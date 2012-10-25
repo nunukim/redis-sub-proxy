@@ -1,0 +1,21 @@
+{
+  "name": "redis-sub-proxy",
+  "version": "0.0.1",
+  "description": "gather Redis's sub connections to one connection",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "vows test/test.coffee",
+    "build": "coffee -co lib src"
+  },
+  "dependencies": {
+    "redis": "~> 0.8",
+    "coffee-script": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "vows": "*"
+  },
+  "repository": "",
+  "author": "Ryota SUZUKI",
+  "license": "BSD"
+}
